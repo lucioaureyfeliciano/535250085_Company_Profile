@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-50: #eef6f3;
+  --color-brand-100: #d6e9e2;
+  --color-brand-600: #17705b;
+  --color-brand-700: #0f5c4a;
+  --color-brand-800: #0c4a3c;
+  --color-brand-900: #08322a;
+  --color-accent-400: #e3a93b;
+  --color-ink: #1a1c1b;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::selection {
+  background: var(--color-brand-100);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-brand-700);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
